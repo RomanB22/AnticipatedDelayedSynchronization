@@ -1,1 +1,1 @@
-# AniticpatedDelayedSynchronization
+# AnticipatedDelayedSynchronization
