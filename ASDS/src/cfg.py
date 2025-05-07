@@ -24,7 +24,7 @@ cfg.printRunTime = 0.1
 # Saving
 cfg.workingDir = '.'  # Where to save data files
 cfg.saveFolder = 'data/'  # Set file output name
-cfg.simLabel = 'TwoPops'  # Set file output name
+cfg.simLabel = 'TwoPops_sync'  # Set file output name
 cfg.savePickle = False # Whether or not to write spikes etc. to a .mat file
 cfg.saveJson = True # Whether or not to write spikes etc. to a .mat file
 cfg.saveMat = False # Whether or not to write spikes etc. to a .mat file
@@ -38,20 +38,20 @@ cfg.analysis['plotRaster'] = {'orderInverse': False, 'saveFig': True, 'timeRange
 cfg.analysis['plotTraces'] = {'include': [(pop, 0) for pop in ['SenderE', 'SenderI', 'ReceiverE', 'ReceiverI']], 'saveFig': True, 'timeRange': timeRangePlotting} # plot recorded traces for this list of cells
 cfg.analysis['plotSpikeHist'] = {'include': ['SenderE', 'SenderI', 'ReceiverE', 'ReceiverI'], 'saveFig': True, 'timeRange': timeRangePlotting} #True # Whether or not to plot a raster
 
-cfg.convergence = 10
+cfg.convergence = 50 # 5, 10, 20, 100
 # Synaptic weights
 cfg.bkgRate = 2000
 cfg.bkgNoise = 0.7
 cfg.bkgDelay = 'uniform(0.8,1.2)'
-cfg.bkgSenderE = 0.1
+cfg.bkgSenderE = 0.3
 cfg.bkgSenderI = 0
 cfg.bkgReceiverE = 0
 cfg.bkgReceiverI = 0
 
-weightEE = 0
-weightEI = 0.05
-weightIE = 0.05
-weightII = 0
+weightEE = 0.03
+weightEI = 0.02
+weightIE = 0.02
+weightII = 0.01
 delay = 'uniform(0.8,1.5)'
 
 cfg.weightSERE = weightEE
