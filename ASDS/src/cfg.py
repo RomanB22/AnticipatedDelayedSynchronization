@@ -52,7 +52,7 @@ weightEE = 0.03
 weightEI = 0.02
 weightIE = 0.02
 weightII = 0.01
-delay = 'uniform(0.8,1.5)'
+delay = 1e-5#'uniform(0.8,1.5)'
 
 cfg.weightSERE = weightEE
 cfg.delaySERE = delay
