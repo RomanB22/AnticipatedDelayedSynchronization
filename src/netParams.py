@@ -9,7 +9,6 @@ netParams = specs.NetParams()   # object of class NetParams to store the network
 netParams.version = 1
 
 netParams.defaultThreshold = 0.0  # spike threshold, 10 mV is NetCon default, lower it for all cells
-
 ###############################################################################
 # NETWORK PARAMETERS
 ###############################################################################

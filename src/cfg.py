@@ -48,32 +48,32 @@ cfg.bkgSenderI = 0
 cfg.bkgReceiverE = 0
 cfg.bkgReceiverI = 0
 
-weightEE = 0.03
-weightEI = 0.02
-weightIE = 0.02
-weightII = 0.01
-delay = 1e-5#'uniform(0.8,1.5)'
+cfg.weightEE = 0.03
+cfg.weightEI = 0.02
+cfg.weightIE = 0.02
+cfg.weightII = 0.01
+cfg.delay = 1e-5#'uniform(0.8,1.5)'
 
-cfg.weightSERE = weightEE
-cfg.delaySERE = delay
+cfg.weightSERE = cfg.weightEE
+cfg.delaySERE = cfg.delay
 
-cfg.weightSERI = weightEI
-cfg.delaySERI = delay
+cfg.weightSERI = cfg.weightEI
+cfg.delaySERI = cfg.delay
 
-cfg.weightRERI = weightEI
-cfg.delayRERI = delay
+cfg.weightRERI = cfg.weightEI
+cfg.delayRERI = cfg.delay
 
-cfg.weightRIRE = weightIE
-cfg.delayRIRE = delay
+cfg.weightRIRE = cfg.weightIE
+cfg.delayRIRE = cfg.delay
 
-cfg.weightRIRI = weightII
-cfg.delayRIRI = delay
+cfg.weightRIRI = cfg.weightII
+cfg.delayRIRI = cfg.delay
 
-cfg.weightSISE = weightIE
-cfg.delaySISE = delay
+cfg.weightSISE = cfg.weightIE
+cfg.delaySISE = cfg.delay
 
-cfg.weightSESI = weightEI
-cfg.delaySESI = delay
+cfg.weightSESI = cfg.weightEI
+cfg.delaySESI = cfg.delay
 
-cfg.weightSISI = weightII
-cfg.delaySISI = delay
+cfg.weightSISI = cfg.weightII
+cfg.delaySISI = cfg.delay
